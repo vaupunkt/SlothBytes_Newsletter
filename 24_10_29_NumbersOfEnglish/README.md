@@ -1,18 +1,33 @@
-## Getting Started
+# Numbers to English
+Write a function that accepts a positive integer between 0 and 999 inclusive and returns a string representation of that integer written in English.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Examples
+```numToEng(0)
+output = "zero"
 
-## Folder Structure
+numToEng(18)
+output = "eighteen"
 
-The workspace contains two folders by default, where:
+numToEng(126)
+output = "one hundred twenty six"
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+numToEng(909)
+output = "nine hundred nine" 
+```
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Notes
+There are no hyphens used (e.g. "thirty five" not "thirty-five").
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+The word "and" is not used (e.g. "one hundred one" not "one hundred and one").
 
-## Dependency Management
+## Solution
+- Compile the App.java with ```javac App.java```
+- Run the App with ```java App <number>``` where ```<number>``` is the number you want to convert to English Words
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+```
+java App 22
+twenty two
+
+java App 34
+thirty four
+```
