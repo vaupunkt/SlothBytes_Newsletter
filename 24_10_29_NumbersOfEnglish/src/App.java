@@ -25,6 +25,15 @@ public class App {
             String result = tens[tensDigit - 2] + " " + units[unitsDigit];
             System.out.println(result);
         }
+
+        if (number >= 100 && number < 1000) {
+            int hundredsDigit = number / 100;
+            int tensDigit = (number - hundredsDigit* 100) /10;
+            int unitsDigit = number % 10;
+
+            String result = hundreds[hundredsDigit - 1] + (tensDigit > 1 ? " " + tens[tensDigit - 2] : "") + (unitsDigit > 0 ? " " + units[unitsDigit] : "");
+            System.out.println(result);
+        }
          
 
     }
