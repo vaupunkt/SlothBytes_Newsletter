@@ -26,3 +26,14 @@ output = "The The Town The The Town"
 
 - Pasting should add a space between words.
 
+## Solution
+- Compile the App.java with `javac keyboardShortcut.java`
+- Run the App with `java keyboardShortcut <string>` where `<string>` is your test sentence
+
+```
+java keyboardShortcut "WARNING Ctrl + V Ctrl + C Ctrl + V"
+"WARNING Ctrl + V Ctrl + C Ctrl + V"
+
+java keyboardShortcut "The Ctrl + C Ctrl + V Town Ctrl + C Ctrl + V"
+The The Town The The Town
+```
